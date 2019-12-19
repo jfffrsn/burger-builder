@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import Button from "../../UI/Button/Button";
 
 class OrderSummary extends Component {
-  //this could be a functional component, doesn't have to be a class
-  componentDidUpdate() {
-    console.log("[Order Summary} did update");
+  // This could be a functional component, doesn't have to be a class
+  componentWillUpdate() {
+    console.log("[OrderSummary] WillUpdate");
   }
 
   render() {
@@ -23,9 +23,9 @@ class OrderSummary extends Component {
         <p>A delicious burger with the following ingredients:</p>
         <ul>{ingredientSummary}</ul>
         <p>
-          <strong>Total Price: {this.props.price.toFixed(2)}</strong>{" "}
+          <strong>Total Price: {this.props.price.toFixed(2)}</strong>
         </p>
-        <p>Continue to checkout?</p>
+        <p>Continue to Checkout?</p>
         <Button btnType="Danger" clicked={this.props.purchaseCancelled}>
           CANCEL
         </Button>
