@@ -1,7 +1,6 @@
 import React from "react";
 
 import classes from "./NavigationItems.module.css";
-
 import NavigationItem from "./NavigationItem/NavigationItem";
 
 const navigationItems = () => (
@@ -10,6 +9,7 @@ const navigationItems = () => (
       Burger Builder
     </NavigationItem>
     <NavigationItem link="/orders">Orders</NavigationItem>
+    <NavigationItem link="/auth">Authenticate</NavigationItem>
   </ul>
 );
 
